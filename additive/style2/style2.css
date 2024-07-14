@@ -1,0 +1,487 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "SelavyUnlockedGX", "SelavyUnlocked", sans-serif;
+  font-weight: 300;
+  word-break: keep-all;
+}
+
+@font-face {
+  font-family: "Director";
+  src: url("https://hub.xpub.nl/chopchop/~v/hdwgh/fonts/Director-Light.otf");
+}
+@font-face {
+  font-family: "SelavyUnlockedGX";
+  src: url("assets/fonts/SelavyUnlockedGX.ttf") format("truetype-variations");
+  font-weight: 1 1000;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Viewport height */
+  background-color: black;
+  margin: 0; /* 화면 가장자리로부터 여백 추가 */
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  visibility: hidden;
+}
+
+main {
+  display: block;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  scroll-snap-align: start;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  pointer-events: none;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  margin-top: 1.2rem;
+  margin-bottom: 0; /* 상하 마진 조정 */
+  font-size: 6rem;
+  font-weight: bolder;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+img {
+  width: 37.5rem;
+}
+
+p {
+  margin-top: 30px;
+}
+
+#small {
+  font-size: 80px;
+  margin-bottom: 10px;
+}
+
+#supersmall {
+  font-size: 30pt;
+  margin-bottom: 20px;
+}
+
+.bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 0rem;
+}
+.bottom h2 {
+  color: white;
+  font-size: 6rem;
+  font-weight: bolder;
+  padding-bottom: 0;
+}
+
+.middle {
+  display: flex;
+  width: 100vw;
+}
+
+.left {
+  width: 50vw;
+  float: left;
+  padding: 3.125rem;
+  padding-left: 3.75rem;
+}
+.left #big {
+  font-size: 2.125rem;
+}
+.left #last {
+  font-size: 1.365rem;
+  line-height: 29px;
+}
+.left p {
+  color: white;
+  margin: 0.625rem;
+}
+
+.right {
+  width: 50vw;
+  float: left;
+  padding: 3.125rem;
+  padding-right: 3.75rem;
+}
+.right #big {
+  font-size: 27px;
+  line-height: 2.25rem;
+}
+.right #last {
+  font-size: 1.365rem;
+  line-height: 33px;
+}
+.right p {
+  color: white;
+  margin: 0.5rem 1.6875rem 0.8rem;
+  font-family: "Director";
+  word-spacing: -0.5rem;
+}
+
+#ad1 {
+  width: 29.375rem;
+  padding-bottom: 2.5rem;
+}
+
+#ad2 {
+  width: 11.25rem;
+  padding-bottom: 2.5rem;
+}
+
+#ad3 {
+  width: 16.875rem;
+  padding-bottom: 2.5rem;
+}
+
+#ad4 {
+  width: 16.875rem;
+  padding-bottom: 2.5rem;
+}
+
+#ad5 {
+  width: 23.75rem;
+  padding-bottom: 2.5rem;
+}
+
+#ad6 {
+  width: 30rem;
+  padding-bottom: 2.5rem;
+}
+
+#ad7 {
+  width: 23.75rem;
+  padding-bottom: 2.5rem;
+}
+
+#ad8 {
+  width: 42.5rem;
+  padding-bottom: 2.5rem;
+}
+
+#ad9 {
+  width: 28.125rem;
+  padding-bottom: 2.5rem;
+}
+
+#ad10 {
+  width: 25rem;
+  padding-bottom: 2.5rem;
+}
+
+#ad11 {
+  width: 68.75rem;
+  padding-bottom: 2.5rem;
+}
+
+#ad12 {
+  width: 16.875rem;
+  padding-bottom: 2.5rem;
+}
+
+#ad13 {
+  width: 20.625rem;
+  padding-bottom: 2.5rem;
+}
+
+#ad14 {
+  width: 22.5rem;
+  padding-bottom: 2.5rem;
+}
+
+#ad15 {
+  width: 11.25rem;
+  padding-bottom: 2.5rem;
+}
+
+#ad16 {
+  width: 18.75rem;
+  padding-bottom: 3.125rem;
+}
+
+#ad17 {
+  width: 15.625rem;
+  padding-bottom: 2.5rem;
+}
+
+#ad18 {
+  width: 25rem;
+  padding-bottom: 2.5rem;
+}
+
+#ad19 {
+  width: 18.75rem;
+  padding-bottom: 2.5rem;
+}
+
+#ad20 {
+  width: 16rem;
+  padding-bottom: 2.5rem;
+}
+
+#ad21 {
+  width: 25rem;
+  padding-bottom: 2.5rem;
+}
+
+#ad22 {
+  width: 25rem;
+  padding-bottom: 2.5rem;
+}
+
+#ad23 {
+  width: 33.75rem;
+  padding-bottom: 2.5rem;
+}
+
+#ad24 {
+  width: 27.5rem;
+  padding-bottom: 2.5rem;
+}
+
+#ad25 {
+  width: 18.75rem;
+  padding-bottom: 2.5rem;
+}
+
+#ad27 {
+  width: 29.375rem;
+  padding-bottom: 2.5rem;
+}
+
+#ad28 {
+  width: 30.625rem;
+  padding-bottom: 2.5rem;
+}
+
+#ad29 {
+  width: 24.375rem;
+  padding-bottom: 2.5rem;
+}
+
+#ad30 {
+  width: 35rem;
+  padding-bottom: 2.5rem;
+}
+
+#ad31 {
+  width: 56.25rem;
+  padding-bottom: 3.125rem;
+}
+
+#ad32 {
+  width: 25rem;
+  padding-bottom: 3.125rem;
+}
+
+#ad33 {
+  width: 18.75rem;
+  padding-bottom: 3.125rem;
+}
+
+#ad37 {
+  width: 38rem;
+  padding-bottom: 2.5rem;
+}
+
+#ad39 {
+  width: 18rem;
+  padding-bottom: 2.5rem;
+}
+
+#ad42 {
+  width: 20rem;
+  padding-bottom: 2.5rem;
+}
+
+#ad43 {
+  width: 33rem;
+  padding-bottom: 2.5rem;
+}
+
+#ad45 {
+  width: 18rem;
+  padding-bottom: 2.5rem;
+}
+
+#ad48 {
+  width: 56rem;
+  padding-bottom: 2.5rem;
+}
+
+#ad49 {
+  width: 33rem;
+  padding-bottom: 2.5rem;
+}
+
+#ad51 {
+  width: 30rem;
+  padding-bottom: 2.5rem;
+}
+
+#ad53 {
+  width: 33rem;
+  padding-bottom: 2.5rem;
+}
+
+#ad54 {
+  width: 59rem;
+  padding-bottom: 2.5rem;
+}
+
+#ad55 {
+  width: 22rem;
+  padding-bottom: 2.5rem;
+}
+
+#ad56 {
+  width: 10.4rem;
+  padding-bottom: 2.5rem;
+}
+
+#ad57 {
+  width: 10.4rem;
+  padding-bottom: 2.5rem;
+}
+
+#ad60 {
+  width: 24rem;
+  padding-bottom: 2.5rem;
+}
+
+#ad62 {
+  width: 36rem;
+  padding-bottom: 2.5rem;
+}
+
+#ad64 {
+  width: 25rem;
+  padding-bottom: 2.5rem;
+}
+
+#ad65 {
+  width: 20rem;
+  padding-bottom: 2.5rem;
+}
+
+#ad66 {
+  width: 24rem;
+  padding-bottom: 2.5rem;
+}
+
+#ad67 {
+  width: 18rem;
+  padding-bottom: 2.5rem;
+}
+
+#ad69 {
+  width: 9.4rem;
+  padding-bottom: 2.5rem;
+}
+
+#ad70 {
+  width: 9.4rem;
+  padding-bottom: 2.5rem;
+}
+
+#ad71 {
+  width: 14rem;
+  padding-bottom: 2.5rem;
+}
+
+#ad73 {
+  width: 25rem;
+  padding-bottom: 2.5rem;
+}
+
+#ad75 {
+  width: 13rem;
+  padding-bottom: 2.5rem;
+}
+
+@media (min-width: 1880px) {
+  p {
+    font-size: 1rem;
+  }
+  h1 {
+    font-size: 6rem;
+    margin-top: 1.2rem;
+  }
+  .bottom h2 {
+    font-size: 6rem;
+    margin-bottom: 1.2rem;
+  }
+  img {
+    width: 40rem;
+  }
+  #small {
+    font-size: 4.5rem;
+    margin: 1rem;
+  }
+  #supersmall {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+  }
+  .right {
+    width: 50vw;
+    float: left;
+    padding: 3rem;
+    padding-right: 8rem;
+    padding-left: 4rem;
+  }
+  .right #big {
+    font-size: 1.7rem;
+    line-height: 2.7rem;
+  }
+  .right #last {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+  .right p {
+    color: white;
+    margin: 0.5rem 0.625rem 0.8rem;
+    font-family: "Director";
+    word-spacing: -0.5rem;
+  }
+  .left {
+    width: 50vw;
+    float: left;
+    padding: 3rem;
+    padding-right: 4rem;
+    padding-left: 8rem;
+  }
+  .left #big {
+    font-size: 2rem;
+    line-height: 2.7rem;
+  }
+  .left #last {
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+  }
+  .left p {
+    color: white;
+    margin: 0.625rem;
+  }
+}/*# sourceMappingURL=style2.css.map */
