@@ -122,6 +122,7 @@ body {
 }
 .card p {
   cursor: help;
+  word-break: keep-all;
 }
 
 .card2 {
@@ -144,6 +145,7 @@ body {
 }
 .card2 p {
   cursor: help;
+  word-break: keep-all;
 }
 
 .card3 {
