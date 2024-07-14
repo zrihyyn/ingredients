@@ -14,8 +14,8 @@
 }
 @font-face {
   font-family: "SelavyUnlockedGX";
-  src: url("assets/fonts/SelavyUnlockedGX.ttf") format("ttf");
-  font-weight: 1 1000;
+  src: url("assets/fonts/SelavyUnlockedGX.ttf") format("woff2");
+  font-weight: 300;
 }
 body {
   display: flex;
