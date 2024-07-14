@@ -9,7 +9,6 @@ body::-webkit-scrollbar {
     visibility: hidden;
 }
 
-/* #food-container 내부 스크롤바 보이기 */
 #food-container::-webkit-scrollbar {
     visibility: visible;
     width: 10px;
@@ -87,9 +86,9 @@ body::-webkit-scrollbar {
         }
         
         .custom-text {
-            font-family: 'Director'; // 원하는 폰트 패밀리로 변경하세요
-            display: block; // 텍스트를 아래에 배치하기 위해 블록 디스플레이로 설정
-            margin-top: 5px; // 이미지와 텍스트 사이의 간격 조정
+            font-family: 'Director';
+            display: block;
+            margin-top: 5px;
             font-size: 0.845rem;
             font-weight: normal;
             text-align: center;
