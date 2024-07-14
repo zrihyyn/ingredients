@@ -1,0 +1,234 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'SelavyUnlockedGX', 'SelavyUnlocked', sans-serif;
+    font-weight: bold;
+    word-break: keep-all;
+}
+body::-webkit-scrollbar {
+    visibility: hidden;
+}
+
+/* #food-container 내부 스크롤바 보이기 */
+#food-container::-webkit-scrollbar {
+    visibility: visible;
+    width: 10px;
+}
+
+#food-container::-webkit-scrollbar-thumb {
+    background-color: rgb(46, 46, 46);
+    border-radius: 5px;
+}
+
+@font-face {
+    font-family: "Director";
+    src: url("https://hub.xpub.nl/chopchop/~v/hdwgh/fonts/Director-Light.otf");
+  }
+@font-face {
+	font-family: 'SelavyUnlockedGX';
+	src: url('../../assets/fonts/SelavyUnlockedGX.ttf') format('truetype-variations');
+	font-weight: 1 1000;
+}
+     
+    
+        .additive {
+            display: inline-block;
+            margin: 10px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            justify-items: center;
+            width: 88px;
+                img{
+                width: 88px;
+                height: 88px;
+                display: block;
+                border-radius: 50px;
+                margin: 10px 0;
+                }
+        }
+        
+        .custom-text {
+            font-family: 'Director'; // 원하는 폰트 패밀리로 변경하세요
+            display: block; // 텍스트를 아래에 배치하기 위해 블록 디스플레이로 설정
+            margin-top: 5px; // 이미지와 텍스트 사이의 간격 조정
+            font-size: 0.845rem;
+            font-weight: normal;
+            text-align: center;
+        }
+        .food-item{
+            display: none;
+                img{
+            width: 300px;
+            height: 300px;
+            display: block;
+         }
+        }
+
+body{
+    background-color: grey;
+    margin: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#result_title{
+    position: relative;
+    margin: 10px 10px 50px 10px;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+}
+#select_title{
+    position: relative;
+    margin: 10px 10px 30px 10px;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    background-color: gray;
+}
+
+.select{
+    width: 40vw;
+    float: left;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.result{
+    width: 40vw;
+    position: fixed;
+    right: 0;
+    margin-right: 5vw;
+}
+.button{
+    position: fixed;
+    top: 40vh;
+    left: 48vw;
+}
+#button{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    margin: 20px 0;
+    button{
+      font-size: 20px;
+      display: flex;
+      margin: 15px;
+      text-align: center;
+      justify-items: center;
+      justify-content: center;
+      align-items: center;
+      width: 90px;
+      height: 90px;
+      border-radius: 100px;
+      border:1px offset black
+    }
+}
+#food-container{
+position: relative;
+display: flex;
+flex-direction: column;
+align-items: center;
+max-height: 300px;
+z-index: 1;
+width: 100%;
+margin-top: 120px;
+margin-left: 20px;
+overflow-y: scroll;
+scroll-snap-type: y mandatory;
+img{
+    scroll-snap-align: start;
+    width: 300px;
+height: 300px;
+}
+}
+
+
+#table{
+    display: flex;
+    position: absolute;
+    z-index: -99;
+    width: 35vw;
+    margin: 20px 20px 20px 40px;
+    left: 20px;
+}
+
+.additive-form{
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+/* 미디어 쿼리 추가 */
+@media (min-width: 1880px) {
+    .additive{
+        align-items: center;
+        justify-content: space-around;
+        justify-items: center;
+        margin: 10px 10px;
+        width: 110px;
+        img{
+            margin: 10px auto;
+            width: 110px;
+            height: 110px;
+            border-radius: 100px;
+            display: block;
+        }
+    }
+
+    .additive-form{
+        display: block;
+        position: relative;
+        margin-top: 5rem;
+        align-items: center;
+        justify-items: center;
+        justify-content: space-around;
+    }
+    .custom-text{
+        font-size: 1.1rem;
+    }
+    #food-item img {
+        width: 400px;
+        height: 400px;
+    }
+    #food-container {
+        margin-left: 30px;
+        max-height: 360px;
+        margin-top: 6rem;
+        img{
+            width: 360px;
+            height: 360px;
+        }
+    }
+
+    #result_title{
+        font-size: 36px;
+        margin-left: 60px;
+    } 
+    #select_title {
+        font-size: 36px;
+        margin-bottom: 50px;
+    }
+    .button{
+        position: fixed;
+        top: 40vh;
+        left: 48.5vw;
+        #button button {
+            width: 100px;
+            height: 100px;
+            font-size: 24px;
+        }
+    }
+
+    body {
+        margin: 50px 100px;
+    }
+    #table{
+        width: 30vw;
+        margin: 20px 20px 20px 70px;
+        left: 3.3vw;
+    }
+}
