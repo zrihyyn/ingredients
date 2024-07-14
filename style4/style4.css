@@ -63,11 +63,6 @@ body::-webkit-scrollbar {
   font-family: "Director";
   src: url("https://hub.xpub.nl/chopchop/~v/hdwgh/fonts/Director-Light.otf");
 }
-@font-face {
-  font-family: "SelavyUnlockedGX";
-  src: url("assets/fonts/SelavyUnlockedGX.ttf") format("ttf");
-  font-weight: 1 1000;
-}
 .additive {
   display: inline-block;
   margin: 10px;
@@ -116,6 +111,7 @@ body {
   align-items: center;
   text-align: center;
   font-size: 30px;
+  font-family: "SelavyUnlocked";
 }
 
 #select_title {
@@ -124,6 +120,7 @@ body {
   align-items: center;
   text-align: center;
   font-size: 30px;
+  font-family: "SelavyUnlocked";
   background-color: gray;
 }
 
@@ -154,6 +151,7 @@ body {
   justify-content: center;
   justify-items: center;
   margin: 20px 0;
+  font-family: "SelavyUnlocked";
 }
 #button button {
   font-size: 20px;
