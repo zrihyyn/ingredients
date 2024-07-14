@@ -2,8 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'SelavyUnlocked';
-    font-weight: light;
+    font-family: 'Director';
 }
 
 .overlay {
@@ -53,12 +52,7 @@
     font-family: "Director";
     src: url("https://hub.xpub.nl/chopchop/~v/hdwgh/fonts/Director-Light.otf");
 }
-/* Variable font (GX) */
-@font-face {
-	font-family: 'SelavyUnlockedGX';
-	src: url('assets/fonts/SelavyUnlockedGX.ttf') format('ttf');
-	font-weight: 1 1000;
-}
+
 
 /* Single weight fonts (woff2 + woff) for unsupported browsers */
 @font-face {
