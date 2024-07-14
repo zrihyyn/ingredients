@@ -3,7 +3,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "SelavyUnlockedGX", "SelavyUnlocked", sans-serif;
+  font-family: 'SelavyUnlocked';
   font-weight: 300;
   word-break: keep-all;
 }
@@ -17,6 +17,50 @@
   src: url("assets/fonts/SelavyUnlockedGX.ttf") format("woff2");
   font-weight: 300;
 }
+/* Single weight fonts (woff2 + woff) for unsupported browsers */
+@font-face {
+    font-family: 'SelavyUnlocked';
+    src: url('../../assets/fonts/SelavyUnlocked-Bold.woff2') format('woff2'),
+        url('../../assets/fonts/SelavyUnlocked-Bold.woff') format('woff');
+    font-weight: 1000; 
+}
+@font-face {
+    font-family: 'SelavyUnlocked';
+    src: url('../../assets/fonts/SelavyUnlocked-Semi-bold.woff2') format('woff2'),
+        url('../../assets/fonts/SelavyUnlocked-Semi-bold.woff') format('woff');
+    font-weight: 900; 
+}
+@font-face {
+    font-family: 'SelavyUnlocked';
+    src: url('../../assets/fonts/SelavyUnlocked-Medium.woff2') format('woff2'),
+        url('../../assets/fonts/SelavyUnlocked-Medium.woff') format('woff');
+    font-weight: 600; 
+}
+@font-face {
+    font-family: 'SelavyUnlocked';
+    src: url('../../assets/fonts/SelavyUnlocked-Regular.woff2') format('woff2'),
+        url('../../assets/fonts/SelavyUnlocked-Regular.woff') format('woff');
+    font-weight: 400; 
+}
+@font-face {
+    font-family: 'SelavyUnlocked';
+    src: url('../../assets/fonts/SelavyUnlocked-Light.woff2') format('woff2'),
+        url('../../assets/fonts/SelavyUnlocked-Light.woff') format('woff');
+    font-weight: 300; 
+}
+@font-face {
+    font-family: 'SelavyUnlocked';
+    src: url('../../assets/fonts/SelavyUnlocked-Extra-light.woff2') format('woff2'),
+        url('../../assets/fonts/SelavyUnlocked-Extra-light.woff') format('woff');
+    font-weight: 100; 
+}
+@font-face {
+    font-family: 'SelavyUnlocked';
+    src: url('../../assets/fonts/SelavyUnlocked-Thin.woff2') format('woff2'),
+        url('../../assets/fonts/SelavyUnlocked-Thin.woff') format('woff');
+    font-weight: 1; 
+}
+
 body {
   display: flex;
   flex-direction: column;
