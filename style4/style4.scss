@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Director';
+    font-family: 'SelavyUnlocked';
     word-break: keep-all;
 }
 body::-webkit-scrollbar {
@@ -115,8 +115,10 @@ body{
     margin: 10px 10px 50px 10px;
     align-items: center;
     text-align: center;
+    font-family: 'SelavyUnlocked';
+    font-weight: 100;
+    letter-spacing: 0;
     font-size: 30px;
-    font-family: 'Director';
 }
 #select_title{
     position: relative;
@@ -124,7 +126,9 @@ body{
     align-items: center;
     text-align: center;
     font-size: 30px;
-    font-family: 'Director';
+    font-family: 'SelavyUnlocked';
+    font-weight: 100;
+    letter-spacing: 0;
     background-color: gray;
 }
 
