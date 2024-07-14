@@ -1,0 +1,320 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "Director";
+    src: url("https://hub.xpub.nl/chopchop/~v/hdwgh/fonts/Director-Light.otf");
+  }
+@font-face {
+	font-family: 'SelavyUnlockedGX';
+	src: url('../../assets/fonts/SelavyUnlockedGX.ttf') format('truetype-variations');
+	font-weight: 1 1000;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'SelavyUnlockedGX', 'SelavyUnlocked', sans-serif;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Viewport height */
+    background-color: black;
+    margin: 0;; /* 화면 가장자리로부터 여백 추가 */
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar{
+    visibility: hidden;
+}
+main{
+    display: block;
+    overflow-y:scroll;
+    scroll-snap-type: y mandatory;
+
+}
+
+section{
+    scroll-snap-align: start;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    pointer-events: none;
+    align-items: center;
+}
+
+/*영어 title*/
+h1 {
+    position: relative;
+    color: white;
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 0;
+    font-size: 6rem;
+    font-weight: bolder;
+    width: 90vw;
+    z-index: -99;
+}
+
+/*중간 image div*/
+.image {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    z-index: 1;
+    top:190px;
+
+    /*중앙 이미지 크기, 위치 조정*/
+    #juice{
+     margin-top: -10px;
+        width: 630px;
+    }
+    #Burrito {
+        margin-top: -10.625rem;
+        width: 52.5rem;
+        margin-right: 0.625rem;
+    }
+    #soup {
+        margin-top: 0rem; // 0px
+        width: 35rem; // 560px
+    }
+    #chip{
+        margin-top: 2rem;
+        width: 34rem;
+    }
+    #can{
+        margin-top: -0.5rem;
+        width: 32rem;
+    }
+    #nut{
+        margin-top: 0.5rem;
+        width: 35rem;
+        transform: rotate(-20deg);
+    }
+    #franks{
+        margin-top: 3rem;
+        width: 33.12rem;
+    }
+    #ketchup{
+        margin-top: -1.125rem;
+        width: 36.125rem;
+    }
+    #ranch{
+        margin-top: 2rem;
+        width: 34.125rem;
+    }
+    #twinkie{
+        margin-top: -7.5rem;
+        width: 43.75rem;
+    }
+    #reese{
+        margin-top: -10.625rem;
+        width: 56.25rem;
+    }
+    #whip{
+        margin-top: 3.75rem;
+        width: 28.125rem;
+    }
+}
+
+/*한국어 png*/
+.bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 0px;
+    z-index: 2;
+    h2{
+        color: white;
+        font-size: 72pt;
+        font-weight: bolder;
+        padding-bottom: 0;
+    }
+}
+/*한국어 png 너비 조정*/
+#pf1{
+    width: 31.25rem;
+    padding-bottom: 40px
+}
+#pf2{
+    width: 50rem;
+    padding-bottom: 40px
+}
+#pf3{
+    width: 50rem;
+    padding-bottom: 40px
+}
+#pf4{
+    width: 20rem;
+    padding-bottom: 40px
+}
+#pf5{
+    width: 50rem;
+    padding-bottom: 40px
+}
+#pf6{
+    width: 50rem;
+    padding-bottom: 40px
+}
+#pf7{
+    width: 37.5rem;
+    padding-bottom: 40px
+}
+#pf8{
+    width: 56.25rem;
+    padding-bottom: 40px
+}
+#pf9{
+    width: 31.25rem;
+    padding-bottom: 40px
+}
+#pf10{
+    width: 58.75rem;
+    padding-bottom: 40px
+}
+#pf11{
+    width: 46.25rem;
+    padding-bottom: 40px
+}
+#pf18{
+    width: 70vw;
+    padding-bottom: 40px;
+}
+
+
+/*설명란*/
+.middle{
+    display: inline-flex;
+    width: 100vw;
+    z-index: 1;
+}
+
+#highlighten{
+    margin-top: 20px;
+    font-size: 18px;
+    background-color:rgb(255, 255, 255);
+    width: fit-content;
+    color:black;
+    padding: 1px 3px;
+    font-weight: bold;
+}
+
+#highlightkr{
+    margin-top: 20px; 
+    padding: 2px 6px;
+    font-size: 15px;
+    background-color:rgb(255, 255, 255);
+    width: fit-content;
+    color:black;
+    width: fit-content;
+    align-content: center;
+}
+
+/*왼쪽div*/
+.left{
+    width: 50vw;
+    float: left;
+    padding: 30px;
+    p{
+        border-bottom: dashed 1px white;
+        width: fit-content;
+        color: white;
+        margin: 10px;
+    
+    }
+}
+/*오른쪽 div*/
+.right{
+    font-family: "Director";
+    width: 50vw;
+    float: left;
+    padding: 30px;
+    p{
+        background-color: black;
+        padding: 5px 5px;
+        border-bottom: dashed 1px white;
+        width: fit-content;
+        color: white;
+        margin: 0px;
+        width: fit-content;
+        font-size: 15px;
+    }
+}
+
+/*만약 4개로 나뉘면*/
+.one{
+    width: 25vw;
+    float: left;
+    padding: 30px;
+    p{
+        border-bottom: dashed 1px white;
+        width: fit-content;
+        color: white;
+        margin: 10px;
+    }
+}
+.two{
+    width: 25vw;
+    float: left;
+    padding: 30px;
+    p{
+        background-color: black;
+        padding: 5px 5px;
+        color: white;
+        border-bottom: dashed 1px white;
+        width: fit-content;
+        margin: 0px;
+        width: fit-content;
+    }
+}
+.three{
+        width: 25vw;
+        float: left;
+        padding: 30px;
+        font-family: "Director";
+        p{
+            border-bottom: dashed 1px white;
+            width: fit-content;
+            background-color: black;
+            padding: 5px 5px;
+            color: white;
+            margin: 0px;
+            width: fit-content;
+            font-size: 15px;
+        }
+}
+.four{
+        width: 25vw;
+        float: left;
+        padding: 30px;
+        font-family: "Director";
+        p{
+            background-color: black;
+            border-bottom: dashed 1px white;
+            width: fit-content;
+            padding: 5px 5px;
+            color: white;
+            margin: 0px;
+            width: fit-content;
+            font-size: 15px;
+        }
+}
+/*실질적 내용-> 큰 글씨로*/
+#big{
+    font-size: 34px;
+}
+
+.recipe{
+    z-index: 1000;
+    img{
+        align-items: center;
+        width: 102vw;
+        margin-left: 5px;
+    }
+}
+

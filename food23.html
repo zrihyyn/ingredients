@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style0/style0.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>snickers</title>
+</head>
+<body>
+<div class="kr">
+    <img id="can" src="text/1000w/bar.png" style="width: 24vw;">
+</div>
+<div class="food">
+    <img id="soup" src="Dictionary/p23_23.png" style="width: 16vw;">
+</div>
+<div class="card3" style="transform: rotate(20deg); z-index: 80; top: -20vh; left:21vw;">
+    <div class="source">
+        <p>Snickers Bar</p>
+</div>
+</div>
+<div class="card" style="transform: rotate(-3deg); top: 5vh; left: 40vw; z-index: 1000;">
+    <div class="source">
+        <p data-image="assets/applejuice.webp">Milk Chocolate:</p>
+        <p data-image="assets/sugar.jpeg">01 Sugar</p>
+        <p data-image="assets/cocoabutter.png">02 Cocoa butter</p>
+        <p data-image="assets/chocolate.png">03 Chocolate</p>
+        <p data-image="assets/skimmilk.jpeg">04 Skim milk</p>
+        <p data-image="assets/lactose.webp">05 Lactose</p>
+        <p data-image="assets/milkfat.jpeg">06 Milkfat</p>
+        <p data-image="assets/soylecithin.jpeg">07 Soy lecithin</p>
+        <p data-image="assets/artificial.jpeg">08 Artificial flavor</p>
+        <p>-</p>
+        <p data-image="assets/peanut.webp">09 Peanuts</p>
+        <p data-image="assets/cornsyrup.png">10 Corn syrup</p>
+        <p data-image="assets/sugar.jpeg">11 Sugar</p>
+        <p data-image="assets/milkfat.jpeg">12 Milkfat</p>
+        <p data-image="assets/soylecithin.jpeg">13 Soy lecithin</p>
+        <p data-image="assets/partiallysoy.avif">14 Partially hydrogenated soybean oil</p>
+        <p data-image="assets/lactose.webp">15 Lactose</p>
+        <p data-image="assets/salt.jpeg">16 Salt</p>
+        <p data-image="assets/eggwhite.jxl">17 Egg whites</p>
+        <p data-image="assets/chocolate.png">16 Chocolate</p>
+        <p data-image="assets/artificial.jpeg">15 Artificial flavor</p>
+ </div>
+</div>
+<div class="card2" style="transform: rotate(4deg); left:10vw; top:20vh; z-index: 1000;">
+    <div class="source">
+        <p data-image="assets/applejuice.webp">밀크 초콜렛:</p>
+        <p data-image="assets/sugar.jpeg">01 설탕</p>
+        <p data-image="assets/cocoabutter.png">02 코코아버터</p>
+        <p data-image="assets/chocolate.png">03 초콜렛</p>
+        <p data-image="assets/skimmilk.jpeg">04 탈지 우유</p>
+        <p data-image="assets/lactose.webp">05 젖당</p>
+        <p data-image="assets/milkfat.jpeg">06 유지방</p>
+        <p data-image="assets/soylecithin.jpeg">07 콩 레시틴</p>
+        <p data-image="assets/artificial.jpeg">08 인공 향료</p>
+        <p>-</p>
+        <p data-image="assets/peanut.webp">09 땅콩</p>
+        <p data-image="assets/cornsyrup.png">10 물엿</p>
+        <p data-image="assets/sugar.jpeg">11 설탕</p>
+        <p data-image="assets/milkfat.jpeg">12 유지방</p>
+        <p data-image="assets/soylecithin.jpeg">13 콩 레시틴</p>
+        <p data-image="assets/partiallysoy.avif">14 부분경화콩기름</p>
+        <p data-image="assets/lactose.webp">15 젖당</p>
+        <p data-image="assets/salt.jpeg">16 소금</p>
+        <p data-image="assets/eggwhite.jxl">17 달걀 흰자</p>
+        <p data-image="assets/chocolate.png">16 초콜렛</p>
+        <p data-image="assets/artificial.jpeg">15 인공 향료</p>
+    </div>
+</div>
+<div class="card4" style="z-index: 10000; left: 74vw; top: 43vh; transform: rotate(-18deg);">
+    <div class="photo">
+        <img id="card4-image" src="Dictionary/p23.png" alt="" style="width: 100%; display: none; justify-self: center;">
+    </div>
+</div>
+<script>
+   document.addEventListener('DOMContentLoaded', () => {
+    const card4Image = document.getElementById('card4-image');
+
+    // 페이지 로드 시 기본 이미지를 표시
+    card4Image.style.display = 'block';
+
+    document.querySelectorAll('.card p, .card2 p').forEach(p => {
+        p.addEventListener('click', () => {
+            const imageUrl = p.getAttribute('data-image');
+            if (imageUrl) {
+                card4Image.src = imageUrl;
+                card4Image.style.display = 'block';
+            } else {
+                card4Image.style.display = 'none';
+            }
+        });
+    });
+});
+
+</script>
+</body>
+</html>

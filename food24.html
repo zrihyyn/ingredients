@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style0/style0.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sugarfreegum</title>
+</head>
+<body>
+<div class="kr">
+    <img id="can" src="text/1400w/gum.png" style="width: 60vw;">
+</div>
+<div class="food">
+    <img id="soup" src="Dictionary/p24_1.png" style="width: 17vw;">
+</div>
+<div class="card3" style="transform: rotate(-5deg); z-index: 80; top: 25vh; left:20vw;">
+    <div class="source">
+        <p>Trident Perfect Peppermint Sugar Free Gum</p>
+</div>
+</div>
+<div class="card" style="transform: rotate(20deg); top: 10vh; left: 10vw; z-index: 1000; height: 300px;">
+    <div class="source">
+        <p data-image="assets/sorbitol.jpeg">01 Sorbitol</p>
+        <p data-image="assets/gumbase.png">02 Gum base</p>
+        <p data-image="assets/mannitol.webp">03 Mannitol</p>
+        <p data-image="assets/xylitol.webp">04 Xylitol</p>
+        <p data-image="assets/glycerin.jpeg">05 Glycerin</p>
+        <p data-image="assets/natural.jpeg">06 Natural flavoring</p>
+        <p data-image="assets/artificial.jpeg">07 Artificial flavoring</p>
+        <p>-</p>
+        <p>Contains 2% or less of:</p>
+        <p data-image="assets/acesulfame.jpeg">08 Acesulfame potassium</p>
+        <p data-image="assets/aspar.webp">09 Aspartame</p>
+        <p data-image="assets/bht.jpeg">10 BHT (to maintain freshness)</p>
+ </div>
+</div>
+<div class="card2" style="transform: rotate(5deg); left:34vw; top:-20vh; z-index: 1000; height: 200px;">
+    <div class="source">
+        <p data-image="assets/sorbitol.jpeg">01 솔비톨</p>
+        <p data-image="assets/gumbase.png">02 껌 기초제</p>
+        <p data-image="assets/mannitol.webp">03 만니톨</p>
+        <p data-image="assets/xylitol.webp">04 자일리톨</p>
+        <p data-image="assets/glycerin.jpeg">05 글리세린</p>
+        <p data-image="assets/natural.jpeg">06 천연 향료</p>
+        <p data-image="assets/artificial.jpeg">07 인공 향료</p>
+        <p>-</p>
+        <p>Contains 2% or less of:</p>
+        <p data-image="assets/acesulfame.jpeg">08 아세설팜칼륨</p>
+        <p data-image="assets/aspar.webp">09 아스파탐</p>
+        <p data-image="assets/bht.jpeg">10 BHT (산화방지제)</p>
+    </div>
+</div>
+<div class="card4" style="z-index: 10000; left: 74vw; top: 50vh; transform: rotate(-20deg);">
+    <div class="photo">
+        <img id="card4-image" src="Dictionary/p24.png" alt="" style="width: 100%; display: none; justify-self: center;">
+    </div>
+</div>
+<script>
+   document.addEventListener('DOMContentLoaded', () => {
+    const card4Image = document.getElementById('card4-image');
+
+    // 페이지 로드 시 기본 이미지를 표시
+    card4Image.style.display = 'block';
+
+    document.querySelectorAll('.card p, .card2 p').forEach(p => {
+        p.addEventListener('click', () => {
+            const imageUrl = p.getAttribute('data-image');
+            if (imageUrl) {
+                card4Image.src = imageUrl;
+                card4Image.style.display = 'block';
+            } else {
+                card4Image.style.display = 'none';
+            }
+        });
+    });
+});
+
+</script>
+</body>
+</html>
