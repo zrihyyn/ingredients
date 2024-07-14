@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style0/style0.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>redbull</title>
+</head>
+<body>
+<div class="kr">
+    <img id="can" src="text/1000w/레드불.png" style="width: 42vw;">
+</div>
+<div class="food">
+    <img id="soup" src="Dictionary/p22_1.png" style="width: 17vw;">
+</div>
+<div class="card3" style="transform: rotate(90deg); z-index: 80; top: 25vh; left:50vw;">
+    <div class="source">
+        <p>Red Bull Energy Drink</p>
+</div>
+</div>
+<div class="card" style="transform: rotate(0deg); top: 10vh; left: 10vw; z-index: 1000; height: 300px;">
+    <div class="source">
+        <p data-image="assets/carbwater.jpeg">01 Carbonated water</p>
+        <p data-image="assets/sucrose.webp">02 Sucrose</p>
+        <p data-image="assets/glucose.webp">03 Glucose</p>
+        <p data-image="assets/citricacid.jpeg">04 Citric acid</p>
+        <p data-image="assets/taurine.avif">05 Taurine</p>
+        <p data-image="assets/sodiumbi.jpeg">06 Sodium bicarbonate</p>
+        <p data-image="assets/magnesiumcar.jpeg">07 Magnesium carbonate</p>
+        <p data-image="assets/caffeine.jpeg">08 Caffeine</p>
+        <p data-image="assets/Niacinamide.webp">09 Niacinamide</p>
+        <p data-image="assets/calciumpanto.webp">10 Calcium pantothenate</p>
+        <p data-image="assets/HCI.jpeg">11 Pyridoxine HCl</p>
+        <p data-image="assets/vitaminb12.webp">12 Vitamin B12</p>
+        <p data-image="assets/natural.jpeg">13 Natural flavor</p>
+        <p data-image="assets/artificial.jpeg">14 Artificial flavor</p>
+        <p>-</p>
+        <p>Colors including</p>
+        <p data-image="assets/red40.jpeg">15 Red No.40</p>
+        <p data-image="assets/blue1.webp">16 Blue No.1</p>
+        <p data-image="assets/yellow5.jpeg">17 Yellow No.5</p>
+ </div>
+</div>
+<div class="card2" style="transform: rotate(0deg); left:44vw; top:-33vh; z-index: 1000; height: 200px;">
+    <div class="source">
+        <p data-image="assets/carbwater.jpeg">01 탄산수</p>
+        <p data-image="assets/sucrose.webp">02 수크랄로스</p>
+        <p data-image="assets/glucose.webp">03 포도당</p>
+        <p data-image="assets/citricacid.jpeg">04 구연산</p>
+        <p data-image="assets/taurine.avif">05 타우린</p>
+        <p data-image="assets/sodiumbi.jpeg">06 탄산수소나트륨</p>
+        <p data-image="assets/magnesiumcar.jpeg">07 탄산마그네슘</p>
+        <p data-image="assets/caffeine.jpeg">08 카페인</p>
+        <p data-image="assets/Niacinamide.webp">09 니코틴아마이드</p>
+        <p data-image="assets/calciumpanto.webp">10 판토텐산칼슘</p>
+        <p data-image="assets/HCI.jpeg">11 피리독신염산염</p>
+        <p data-image="assets/vitaminb12.webp">12 비타민 B12</p>
+        <p data-image="assets/natural.jpeg">13 천연 향료</p>
+        <p data-image="assets/artificial.jpeg">14 인공 향료</p>
+        <p>-</p>
+        <p>포함된 색소</p>
+        <p data-image="assets/red40.jpeg">15 식용색소 적색 제 40호</p>
+        <p data-image="assets/blue1.webp">16 식용색소 청색 제 1호</p>
+        <p data-image="assets/yellow5.jpeg">17 식용색소 황색 제 5호</p>
+    </div>
+</div>
+<div class="card4" style="z-index: 10000; left: 14vw; top: 50vh; transform: rotate(0deg);">
+    <div class="photo">
+        <img id="card4-image" src="Dictionary/p22.png" alt="" style="width: 100%; display: none; justify-self: center;">
+    </div>
+</div>
+<script>
+   document.addEventListener('DOMContentLoaded', () => {
+    const card4Image = document.getElementById('card4-image');
+
+    // 페이지 로드 시 기본 이미지를 표시
+    card4Image.style.display = 'block';
+
+    document.querySelectorAll('.card p, .card2 p').forEach(p => {
+        p.addEventListener('click', () => {
+            const imageUrl = p.getAttribute('data-image');
+            if (imageUrl) {
+                card4Image.src = imageUrl;
+                card4Image.style.display = 'block';
+            } else {
+                card4Image.style.display = 'none';
+            }
+        });
+    });
+});
+
+</script>
+</body>
+</html>
