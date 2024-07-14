@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+}
+
+@font-face {
+    font-family: "Director";
+    src: url("https://hub.xpub.nl/chopchop/~v/hdwgh/fonts/Director-Light.otf");
+}
+
+@font-face {
+    font-family: 'SelavyUnlockedGX';
+    src: url('../../assets/fonts/SelavyUnlockedGX.ttf') format('truetype-variations');
+    font-weight: 1 1000;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    padding: 0;
+    margin: 0;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Director';
+    line-height: 24px;
+}
+.kr{
+    display: flex;
+    position: absolute;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    img{
+        margin: 2rem 1rem;
+    }
+}
+.food {
+ left: 55vw;
+    display: flex;
+    position: fixed;
+    width: 50vw;
+    height: 50vh;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    img {
+        width: 24vw;
+        position: relative;
+        display: flex;
+        margin: 5vh auto 5vh;
+    }
+}
+
+.title {
+    width: fit-content;
+    height: auto;
+    margin: 10px;
+    p {
+        font-size: 5rem;
+        letter-spacing: -0.5px;
+        line-height: 8rem;
+    }
+}
+
+.card {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 10vw;
+    margin: auto;
+    padding: 20px;
+    transform: rotate(10deg);
+    transform-origin: center center;
+    width: calc(896px / 2);
+    height: calc(562px);
+    background: white;
+    -webkit-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.566);
+    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.406);
+    overflow: scroll;
+    overflow-x: hidden;
+    letter-spacing: -0.5px;
+    line-height: 2rem;
+    p{
+        cursor: help;
+    }
+}
+
+.card2 {
+    position: absolute;
+    top: 40vh;
+    bottom: 0;
+    left: 68vw; /* 기존 카드의 오른쪽에 배치 */
+    margin: auto;
+    padding: 20px;
+    transform: rotate(-16deg);
+    transform-origin: center center;
+    width: calc(330px);
+    height: calc(562px /2);
+    background: white;
+    -webkit-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.458);
+    overflow: scroll;
+    overflow-x: hidden;
+    letter-spacing: -0.5px;
+    line-height: 2rem;
+    p{
+        cursor: help;
+    }
+}
+
+.card3 {
+    font-size: 2rem;
+    z-index: 99;
+    position: absolute;
+    top: 20vh;
+    bottom: 0;
+    left: 22vw; /* 기존 카드의 오른쪽에 배치 */
+    margin: auto;
+    padding: 2px 2rem;
+    transform: rotate(30deg);
+    transform-origin: center center;
+    width: fit-content;
+    height: fit-content;
+    background: white;
+    -webkit-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.458);
+    overflow: hidden;
+    letter-spacing: -0.5px;
+    line-height: 7rem;
+}
+
+.card4 {
+    position: absolute;
+    top: 0vh;
+    bottom: 0;
+    left: 40vw; /* 기존 카드의 오른쪽에 배치 */
+    margin: auto;
+    padding: 10px;
+    transform: rotate(-2deg);
+    transform-origin: center center;
+    width: 230px;
+    height: 230px;
+    background: white;
+    -webkit-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.458);
+    z-index: -9;
+}

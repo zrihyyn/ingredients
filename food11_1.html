@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style0/style0.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>whip</title>
+</head>
+<body>
+<div class="kr">
+    <img id="can" src="text/food/1400w/휩.png" style="width: 40vw;">
+</div>
+<div class="food">
+    <img id="soup" src="Dictionary/p11_1.png" style="width: 22vw;">
+</div>
+<div class="card3" style="transform: rotate(3deg); z-index: 10; top: 55vh; left: 10vw;">
+    <div class="source">
+        <p>Kraft Cool Whip Original</p>
+</div>
+</div>
+<div class="card" style="transform: rotate(-10deg); top: 5vh; left: 40vw; z-index: 1000;">
+    <div class="source">
+        <p data-image="assets/water.jpeg">01 water</p>
+        <p>-</p>
+        <p>Hydrogenated Vegetable Oil:</p>
+        <p data-image="assets/coconutoil.webp">02 Coconut oil</p>
+        <p data-image="assets/palmoil.png">03 Palm kernel oil</p>
+        <p>-</p>
+        <p data-image="assets/hfcs.webp">04 High-fructose corn syrup</p>
+        <p data-image="assets/cornsyrup.png">05 Corn syrup</p>
+        <p data-image="assets/skimmilk.jpeg">06 Skim milk</p>
+        <p>-</p>
+        <p>Contains 2% or less of:</p>
+        <p data-image="assets/lightcream.png">07 Light cream</p>
+        <p data-image="assets/sodiumcasei.jpeg">08 Sodium caseinate</p>
+        <p data-image="assets/natural.jpeg">09 Natural flavor</p>
+        <p data-image="assets/artificial.jpeg">10 Artificial flavor</p>
+        <p data-image="assets/xanthan.webp">11 Xanthan gum</p>
+        <p data-image="assets/guargum.jpeg">12 Guar gum</p>
+        <p data-image="assets/poly60.jpeg">13 Polysorbate 60</p>
+        <p data-image="assets/sorbitanmono.jpeg">14 Sorbitan monostearate</p>
+        <p data-image="assets/sodiumpoly.jpeg">15 Sodium polyphosphate</p>
+        <p data-image="assets/beta.jpeg">16 Beta-carotene (color)</p>
+ </div>
+</div>
+<div class="card2" style="transform: rotate(1deg); left:13vw; top:20vh; z-index: 100;">
+    <div class="source">
+        <p data-image="assets/water.jpeg">01 물</p>
+        <p>-</p>
+        <p>수처리 식물성 기름</p>
+        <p data-image="assets/coconutoil.webp">02 코코넛 기름</p>
+        <p data-image="assets/palmoil.png">03 팜핵유</p>
+        <p>-</p>
+        <p data-image="assets/hfcs.webp">04 액상과당</p>
+        <p data-image="assets/cornsyrup.png">05 물엿</p>
+        <p data-image="assets/skimmilk.jpeg">06 탈지 우유</p>
+        <p>-</p>
+        <p>함유량 2% 이하</p>
+        <p data-image="assets/lightcream.png">07 유지방함량이 18-30%인 크림 (테이블 크림)</p>
+        <p data-image="assets/sodiumcasei.jpeg">08 카세인나트륨</p>
+        <p data-image="assets/natural.jpeg">09 천연 향료</p>
+        <p data-image="assets/artificial.jpeg">10 인공 향료</p>
+        <p data-image="assets/xanthan.webp">11 잔탄검</p>
+        <p data-image="assets/guargum.jpeg">12 구아검</p>
+        <p data-image="assets/poly60.jpeg">13 폴리솔베이트 60</p>
+        <p data-image="assets/sorbitanmono.jpeg">14 합성 왁스</p>
+        <p data-image="assets/sodiumpoly.jpeg">15 폴리인산나트륨</p>
+        <p data-image="assets/beta.jpeg">16 베타카로틴 (색소)</p>
+    </div>
+</div>
+<div class="card4" style="z-index: -10; left: 75vw; top: 60vh; transform: rotate(3deg);">
+    <div class="photo">
+        <img id="card4-image" src="Dictionary/p11.png" alt="" style="width: 100%; display: none; justify-self: center;">
+    </div>
+</div>
+<script>
+   document.addEventListener('DOMContentLoaded', () => {
+    const card4Image = document.getElementById('card4-image');
+
+    // 페이지 로드 시 기본 이미지를 표시
+    card4Image.style.display = 'block';
+
+    document.querySelectorAll('.card p, .card2 p').forEach(p => {
+        p.addEventListener('click', () => {
+            const imageUrl = p.getAttribute('data-image');
+            if (imageUrl) {
+                card4Image.src = imageUrl;
+                card4Image.style.display = 'block';
+            } else {
+                card4Image.style.display = 'none';
+            }
+        });
+    });
+});
+
+</script>
+</body>
+</html>

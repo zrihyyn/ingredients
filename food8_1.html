@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style0/style0.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ranch</title>
+</head>
+<body>
+<div class="kr">
+    <img id="can" src="text/food/1400w/랜치.png" style="width: 60vw;">
+</div>
+<div class="food">
+    <img id="soup" src="Dictionary/p8_8.png" style="width: 22vw;">
+</div>
+<div class="card3" style="transform: rotate(1deg); z-index: 10; top: 55vh; left: 15vw;">
+    <div class="source">
+        <p>Hidden Valley The Original Ranch Light Dressing</p>
+</div>
+</div>
+<div class="card" style="transform: rotate(-2deg); top: 15vh; left: 25vw; z-index: -999;">
+    <div class="source">
+        <p data-image="assets/water.jpeg">01 water</p>
+        <p data-image="assets/soybeanoil.webp">02 Vegetable oils (soybean</p>
+        <p data-image="assets/canola.webp">03 and / or canola)</p>
+        <p data-image="assets/malto.jpeg">04 Maltodextrin</p>
+        <p data-image="assets/buttermilk.webp">05 Buttermilk</p>
+        <p data-image="assets/sugar.jpeg">06 Sugar</p>
+        <p data-image="assets/salt.jpeg">07 Salt</p>
+        <p>-</p>
+        <p>Contains 2% or less of:</p>
+        <p data-image="assets/spice.jpeg">08 Spices</p>
+        <p data-image="assets/driedgarlic.jpeg">09 Dried garlic</p>
+        <p data-image="assets/dryonion.webp">10 Dried onion</p>
+        <p data-image="assets/natural.jpeg">11 Natural flavors (soy)</p>
+        <p data-image="assets/eggyolk.jpeg">12 Egg yolk</p>
+        <p data-image="assets/modifiedfood.jpeg">13 Modified food starch</p>
+        <p data-image="assets/phosphoric.webp">14 Phosphoric acid</p>
+        <p data-image="assets/vinegar.webp">15 Vinegar</p>
+        <p data-image="assets/artificial.jpeg">16 Artificial flavor</p>
+        <p data-image="assets/disodiumphos.webp">17 Disodium phosphate</p>
+        <p data-image="assets/xanthan.webp">18 Xanthan gum</p>
+        <p data-image="assets/msg.jpeg">19 Monosodium glutamate</p>
+        <p data-image="assets/artificial.jpeg">20 Artificial color</p>
+        <p data-image="assets/disodiuminosi.avif">21 Disodium inosinate</p>
+        <p data-image="assets/disodiumguan.jpeg">22 Disodium guanylate</p>
+        <p data-image="assets/sorbicacid.webp">23 Sorbic acid and</p>
+        <p data-image="assets/edta.webp">24 Calcium EDTA as preservatives</p>
+ </div>
+</div>
+<div class="card2" style="transform: rotate(-20deg); left:67vw; top:40vh; z-index: 100;">
+    <div class="source">
+        <p data-image="assets/water.jpeg">01 물</p>
+        <p data-image="assets/soybeanoil.webp">02 식물성 기름 (콩기름</p>
+        <p data-image="assets/canola.webp">03 그리고 / 또는 카놀라유)</p>
+        <p data-image="assets/malto.jpeg">04 말토덱스트린</p>
+        <p data-image="assets/buttermilk.webp">05 버터밀크</p>
+        <p data-image="assets/sugar.jpeg">06 설탕</p>
+        <p data-image="assets/salt.jpeg">07 소금</p>
+        <p>-</p>
+        <p>함유량 2% 이하</p>
+        <p data-image="assets/spice.jpeg">08 향신료</p>
+        <p data-image="assets/driedgarlic.jpeg">09 건마늘</p>
+        <p data-image="assets/dryonion.webp">10 건양파</p>
+        <p data-image="assets/natural.jpeg">11 천연 향료 (콩)</p>
+        <p data-image="assets/eggyolk.jpeg">12 달걀 노른자</p>
+        <p data-image="assets/modifiedfood.jpeg">13 변성전분</p>
+        <p data-image="assets/phosphoric.webp">14 인산</p>
+        <p data-image="assets/vinegar.webp">15 식초</p>
+        <p data-image="assets/artificial.jpeg">16 인공 향료</p>
+        <p data-image="assets/disodiumphos.webp">17 인산이나트륨</p>
+        <p data-image="assets/xanthan.webp">18 잔탄검</p>
+        <p data-image="assets/msg.jpeg">19 MSG</p>
+        <p data-image="assets/artificial.jpeg">20 인공색소</p>
+        <p data-image="assets/disodiuminosi.avif">21 이노신산이나트륨</p>
+        <p data-image="assets/disodiumguan.jpeg">22 구아닐산이나트륨</p>
+        <p data-image="assets/sorbicacid.webp">23 소르빈산</p>
+        <p data-image="assets/edta.webp">24 칼슘 이디티에이 (보존제)</p>
+    </div>
+</div>
+<div class="card4" style="z-index: -10; left: 10vw; top: 2vh; transform: rotate(8deg);">
+    <div class="photo">
+        <img id="card4-image" src="Dictionary/p8.png" alt="" style="width: 100%; display: none; justify-self: center;">
+    </div>
+</div>
+<script>
+   document.addEventListener('DOMContentLoaded', () => {
+    const card4Image = document.getElementById('card4-image');
+
+    // 페이지 로드 시 기본 이미지를 표시
+    card4Image.style.display = 'block';
+
+    document.querySelectorAll('.card p, .card2 p').forEach(p => {
+        p.addEventListener('click', () => {
+            const imageUrl = p.getAttribute('data-image');
+            if (imageUrl) {
+                card4Image.src = imageUrl;
+                card4Image.style.display = 'block';
+            } else {
+                card4Image.style.display = 'none';
+            }
+        });
+    });
+});
+
+</script>
+</body>
+</html>

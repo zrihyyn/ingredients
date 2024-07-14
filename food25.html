@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style0/style0.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dillchips</title>
+</head>
+<body>
+<div class="kr">
+    <img id="can" src="text/1400w/vlasic.png" style="width: 42vw;">
+</div>
+<div class="food">
+    <img id="soup" src="Dictionary/p25_1.png" style="width: 17vw;">
+</div>
+<div class="card3" style="transform: rotate(0deg); z-index: 80; top: 55vh; left:20vw;">
+    <div class="source">
+        <p>Vlasic Ovals Hamburger Dill Chips</p>
+</div>
+</div>
+<div class="card" style="transform: rotate(0deg); top: 10vh; left: 10vw; z-index: 1000; height: 300px;">
+    <div class="source">
+        <p data-image="assets/filtered.webp">01 Cucumbers</p>
+        <p data-image="assets/water.jpeg">02 Water</p>
+        <p data-image="assets/disvinegar.avif">03 Distilled vinegar</p>
+        <p data-image="assets/salt.jpeg">04 Salt</p>
+        <p data-image="assets/hfcs.webp">05 High-fructose corn syrup</p>
+        <p data-image="assets/calciumchlo.webp">06 Calcium chloride</p>
+        <p data-image="assets/natural.jpeg">07 Natural flavors</p>
+        <p data-image="assets/poly80.webp">08 Polysorbate 80</p>
+        <p data-image="assets/yellow5.jpeg">09 Yellow No.5</p>
+ </div>
+</div>
+<div class="card2" style="transform: rotate(0deg); left:44vw; top:-33vh; z-index: 1000; height: 200px;">
+    <div class="source">
+        <p data-image="assets/cucumber.png">01 오이</p>
+        <p data-image="assets/water.jpeg">02 물</p>
+        <p data-image="assets/disvinegar.avif">03 증류식초</p>
+        <p data-image="assets/salt.jpeg">04 소금</p>
+        <p data-image="assets/hfcs.webp">05 액상과당</p>
+        <p data-image="assets/calciumchlo.webp">06 염화칼슘</p>
+        <p data-image="assets/natural.jpeg">07 천연 향료</p>
+        <p data-image="assets/poly80.webp">08 폴리솔베이트 80</p>
+        <p data-image="assets/yellow5.jpeg">09 식용색소 황색 제 5호</p>
+    </div>
+</div>
+<div class="card4" style="z-index: 10000; left: 74vw; top: 50vh; transform: rotate(0deg);">
+    <div class="photo">
+        <img id="card4-image" src="Dictionary/p25.png" alt="" style="width: 100%; display: none; justify-self: center;">
+    </div>
+</div>
+<script>
+   document.addEventListener('DOMContentLoaded', () => {
+    const card4Image = document.getElementById('card4-image');
+
+    // 페이지 로드 시 기본 이미지를 표시
+    card4Image.style.display = 'block';
+
+    document.querySelectorAll('.card p, .card2 p').forEach(p => {
+        p.addEventListener('click', () => {
+            const imageUrl = p.getAttribute('data-image');
+            if (imageUrl) {
+                card4Image.src = imageUrl;
+                card4Image.style.display = 'block';
+            } else {
+                card4Image.style.display = 'none';
+            }
+        });
+    });
+});
+
+</script>
+</body>
+</html>

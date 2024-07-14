@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style0/style0.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div class="kr">
+    <img id="Burri" src="text/food/1200w/부리토.png" style="width: 40vw">
+</div>
+<div class="food">
+    <img id="Burrito" src="Dictionary/p1_1 복사본.png">
+</div>
+<div class="card3" style="z-index: -999; left: 30vw; top:30vh">
+    <div class="source">
+        <p>Amy's Burrito Especial</p>
+</div>
+</div>
+<div class="card">
+    <div class="source">
+        <p data-image="assets/blackbean.jpeg">01 Organic black beans</p>
+        <p data-image="assets/wheatflour.webp">02 Organic wheat flour</p>
+        <p data-image="assets/water.jpeg">03 Filtered water</p>
+        <p data-image="assets/onion.jpeg">04 Organic onions</p>
+        <p data-image="assets/rice.webp">05 Organic rice</p>
+        <p data-image="assets/tomatopuree.png">06 Organic tomato puree</p>
+        <p data-image="assets/bellpepper.jpeg">07 Organic bell peppers</p>
+        <p data-image="assets/safflower.png">08 Expeller-pressed high-oleic safflower </p>
+        <p data-image="assets/Sunflower.jpeg">09 and/or Sunflower oil</p>
+        <p>-</p>
+        <p id="highlighten">Cheddar and Monterey Jack Cheeses:</p>
+        <p data-image="assets/milk.jpeg">10 Pasturized milk</p>
+        <p data-image="assets/culture.jpeg">11 Culture</p>
+        <p data-image="assets/salt.jpeg">12 Salt</p>
+        <p data-image="assets/annatto.jpeg">13 Annatto (color)</p>
+        <p data-image="assets/enzyme.webp">14 Enzymes (without animal enzymes or animal rennet)</p>
+        <p>-</p>
+        <p data-image="assets/seasalt.jpeg">15 Sea salt</p>
+        <p data-image="assets/olive.webp">16 Olives</p>
+        <p data-image="assets/greenchile.webp">17 Organic green chiles</p>
+        <p data-image="assets/cilantro.webp">18 Cilantro</p>
+        <p data-image="assets/garlic.jpeg">19 Organic garlic</p>
+        <p data-image="assets/spice.jpeg">20 Spices</p>
+        <p data-image="assets/sweetriceflour.jpeg">21 Organic sweet rice flour</p>
+</div>
+</div>
+<div class="card2">
+    <div class="source">
+                    <p data-image="assets/blackbean.jpeg">01 유기농 검은콩</p>
+                    <p data-image="assets/wheatflour.webp">02 유기농 밀가루</p>
+                    <p data-image="assets/water.jpeg">03 정수</p>
+                    <p data-image="assets/onion.jpeg">04 유기농 양파</p>
+                    <p data-image="assets/rice.webp">05 유기농 쌀</p>
+                    <p data-image="assets/tomatopuree.png">06 유기농 토마토 퓨레</p>
+                    <p data-image="assets/bellpepper.jpeg">07 유기농 파프리카</p>
+                    <p data-image="assets/safflower.png">08 압착 추출된 고올레산 홍화유</p>
+                    <p data-image="assets/Sunflower.jpeg">09 그리고 / 또는 해바라기씨유</p>
+                    <p>-</p>
+                    <p id="highlightkr">체다와 몬테레이 잭 치즈:</p>
+                    <p data-image="assets/milk.jpeg">10 저온 살균 우유</p>
+                    <p data-image="assets/culture.jpeg">11 유산균</p>
+                    <p data-image="assets/salt.jpeg">12 소금</p>
+                    <p data-image="assets/annatto.jpeg">13 안나토 (색소)</p>
+                    <p data-image="assets/enzyme.webp">14 동물 효소나 동물 렌넷이 포함되지 않은 효소</p>
+                    <p>-</p>
+                    <p data-image="assets/seasalt.jpeg">15 천일염</p>
+                    <p data-image="assets/olive.webp">16 올리브</p>
+                    <p data-image="assets/greenchile.webp">17 유기농 녹색 고추</p>
+                    <p data-image="assets/cilantro.webp">18 고수 잎</p>
+                    <p data-image="assets/garlic.jpeg">19 유기농 마늘</p>
+                    <p data-image="assets/spice.jpeg">20 향신료</p>
+                    <p data-image="assets/sweetriceflour.jpeg">21 유기농 찹쌀 가루</p>
+    </div>
+</div>
+<div class="card4">
+    <div class="photo">
+        <img id="card4-image" src="Dictionary/P1.png" alt="" style="width: 100%; display: none; justify-self: center;">
+    </div>
+</div>
+<script>
+   document.addEventListener('DOMContentLoaded', () => {
+    const card4Image = document.getElementById('card4-image');
+
+    // 페이지 로드 시 기본 이미지를 표시
+    card4Image.style.display = 'block';
+
+    document.querySelectorAll('.card p, .card2 p').forEach(p => {
+        p.addEventListener('click', () => {
+            const imageUrl = p.getAttribute('data-image');
+            if (imageUrl) {
+                card4Image.src = imageUrl;
+                card4Image.style.display = 'block';
+            } else {
+                card4Image.style.display = 'none';
+            }
+        });
+    });
+});
+
+</script>
+</body>
+</html>

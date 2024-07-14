@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style0/style0.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>juice</title>
+</head>
+<body>
+<div class="kr">
+    <img id="can" src="text/1400w/green.png" style="width: 54vw;">
+</div>
+<div class="food">
+    <img id="soup" src="Dictionary/p16_16.png" style="width: 16vw;">
+</div>
+<div class="card3" style="transform: rotate(40deg); z-index: 80; top: 5vh; left:21vw;">
+    <div class="source">
+        <p>Naked Green Machine 100% Juice Smoothie</p>
+</div>
+</div>
+<div class="card" style="transform: rotate(-3deg); top: 5vh; left: 40vw; z-index: 1000;">
+    <div class="source">
+        <p data-image="assets/applejuice.webp">01 Apple juice</p>
+        <p data-image="assets/mango.jpeg">02 Mango puree</p>
+        <p data-image="assets/pineapple.jpeg">03 Pineapple juice</p>
+        <p data-image="assets/bananapuree.webp">04 Banana puree</p>
+        <p data-image="assets/kiwipuree.jpeg">05 Kiwi puree</p>
+        <p data-image="assets/salt.jpeg">06 Spirulina</p>
+        <p data-image="assets/natural.jpeg">07 Natural flavors</p>
+        <p data-image="assets/alfalfa.jpeg">08 Alfalfa</p>
+        <p data-image="assets/broccoli.jpeg">09 Broccoli</p>
+        <p data-image="assets/spinach.webp">10 Spinach</p>
+        <p data-image="assets/barleygrass.jpeg">11 Barley grass</p>
+        <p data-image="assets/wheatgrass.webp">12 Wheat grass</p>
+        <p data-image="assets/pasley.jpeg">13 Parsley</p>
+        <p data-image="assets/gingerroot.webp">14 Ginger root</p>
+        <p data-image="assets/kale.jpeg">15 Kale</p>
+        <p data-image="assets/odorless.webp">16 Odorless garlic</p>
+ </div>
+</div>
+<div class="card2" style="transform: rotate(-21deg); left:10vw; top:20vh; z-index: 1000;">
+    <div class="source">
+        <p data-image="assets/applejuice.webp">01 사과 주스</p>
+        <p data-image="assets/mango.jpeg">02 망고 퓨레</p>
+        <p data-image="assets/pineapple.jpeg">03 파인애플 주스</p>
+        <p data-image="assets/bananapuree.webp">04 바나나 퓨레</p>
+        <p data-image="assets/kiwipuree.jpeg">05 키위 퓨레</p>
+        <p data-image="assets/salt.jpeg">06 스피루리나</p>
+        <p data-image="assets/natural.jpeg">07 천연 향료</p>
+        <p data-image="assets/alfalfa.jpeg">08 자주개자리</p>
+        <p data-image="assets/broccoli.jpeg">09 브로콜리</p>
+        <p data-image="assets/spinach.webp">10 시금치</p>
+        <p data-image="assets/barleygrass.jpeg">11 새싹 보리</p>
+        <p data-image="assets/wheatgrass.webp">12 밀싹</p>
+        <p data-image="assets/pasley.jpeg">13 파슬리</p>
+        <p data-image="assets/gingerroot.webp">14 생강 뿌리</p>
+        <p data-image="assets/kale.jpeg">15 케일</p>
+        <p data-image="assets/odorless.webp">16 무취마늘</p>
+    </div>
+</div>
+<div class="card4" style="z-index: 10000; left: 74vw; top: 43vh; transform: rotate(-18deg);">
+    <div class="photo">
+        <img id="card4-image" src="Dictionary/p16.png" alt="" style="width: 100%; display: none; justify-self: center;">
+    </div>
+</div>
+<script>
+   document.addEventListener('DOMContentLoaded', () => {
+    const card4Image = document.getElementById('card4-image');
+
+    // 페이지 로드 시 기본 이미지를 표시
+    card4Image.style.display = 'block';
+
+    document.querySelectorAll('.card p, .card2 p').forEach(p => {
+        p.addEventListener('click', () => {
+            const imageUrl = p.getAttribute('data-image');
+            if (imageUrl) {
+                card4Image.src = imageUrl;
+                card4Image.style.display = 'block';
+            } else {
+                card4Image.style.display = 'none';
+            }
+        });
+    });
+});
+
+</script>
+</body>
+</html>

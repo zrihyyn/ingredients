@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style0/style0.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>drpepper</title>
+</head>
+<body>
+<div class="kr">
+    <img id="can" src="text/food/1400w/닥터페퍼.png" style=" width: 22vw;">
+</div>
+<div class="food">
+    <img id="soup" src="Dictionary/p4_1.png" style="width: 20vw;">
+</div>
+<div class="card3" style="transform: rotate(-2deg); z-index: 10; top: 24vh; left: 10vw;">
+    <div class="source">
+        <p>Dr pepper</p>
+</div>
+</div>
+<div class="card" style="transform: rotate(0deg); top: 22vh; left: 30vw; z-index: -999; height: fit-content;">
+    <div class="source">
+        <p data-image="assets/carbwater.jpeg">01 Carbonated water</p>
+        <p data-image="assets/hfcs.webp">02 High-fructose corn syrup</p>
+        <p data-image="assets/caramel.png">03 Caramel color</p>
+        <p data-image="assets/phosphoric.webp">04 Phosphoric acid</p>
+        <p data-image="assets/natural.jpeg">05 Natural flavor</p>
+        <p data-image="assets/artificial.jpeg">06 Artificial flavor</p>
+        <p data-image="assets/sodiumbenzo.jpeg">07 Sodium benzoate (preservative)</p>
+        <p data-image="assets/caffeine.webp">08 Caffeine</p>
+ </div>
+</div>
+<div class="card2" style="transform: rotate(9deg); left:57vw; top:47vh;">
+    <div class="source">
+        <p data-image="assets/carbwater.jpeg">01 탄산수</p>
+        <p data-image="assets/hfcs.webp">02 액상과당</p>
+        <p data-image="assets/caramel.png">03 캐러멜 색소</p>
+        <p data-image="assets/phosphoric.webp">04 인산</p>
+        <p data-image="assets/natural.jpeg">05 천연 향료</p>
+        <p data-image="assets/artificial.jpeg">06 인공 향료</p>
+        <p data-image="assets/sodiumbenzo.jpeg">07 벤조산나트륨 (보존제)</p>
+        <p data-image="assets/caffeine.webp">08 카페인</p>
+    </div>
+</div>
+<div class="card4" style="z-index: -10; left: 10vw; top: 0vh; transform: rotate(-30deg);">
+    <div class="photo">
+        <img id="card4-image" src="Dictionary/p4.png" alt="" style="width: 100%; display: none; justify-self: center;">
+    </div>
+</div>
+<script>
+   document.addEventListener('DOMContentLoaded', () => {
+    const card4Image = document.getElementById('card4-image');
+
+    // 페이지 로드 시 기본 이미지를 표시
+    card4Image.style.display = 'block';
+
+    document.querySelectorAll('.card p, .card2 p').forEach(p => {
+        p.addEventListener('click', () => {
+            const imageUrl = p.getAttribute('data-image');
+            if (imageUrl) {
+                card4Image.src = imageUrl;
+                card4Image.style.display = 'block';
+            } else {
+                card4Image.style.display = 'none';
+            }
+        });
+    });
+});
+
+</script>
+</body>
+</html>

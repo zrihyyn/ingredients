@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style0/style0.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wheat</title>
+</head>
+<body>
+<div class="kr">
+    <img id="can" src="text/1000w/nabisco.png" style="width: 34vw;">
+</div>
+<div class="food">
+    <img id="soup" src="Dictionary/p15_15.png" style="width: 22vw;">
+</div>
+<div class="card3" style="transform: rotate(3deg); z-index: -10; top: 55vh; left:61vw;">
+    <div class="source">
+        <p>Nabisco Wheat Thins</p>
+</div>
+</div>
+<div class="card" style="transform: rotate(15deg); top: 5vh; left: 10vw; z-index: 1000;">
+    <div class="source">
+        <p data-image="assets/wholegrain.jpeg">01 Whole grain wheat flour</p>
+        <p data-image="assets/soybeanoil.webp">02 Soybean oil</p>
+        <p data-image="assets/sugar.jpeg">03 Sugar</p>
+        <p data-image="assets/cornstarch.png">04 Cornstarch</p>
+        <p data-image="assets/malt.jpeg">05 Malt syrup (from corn and barley)</p>
+        <p data-image="assets/salt.jpeg">06 Salt</p>
+        <p data-image="assets/goldensyrup.png">07 Refiner's syrup</p>
+        <p>-</p>
+        <p>Leavening:</p>
+        <p data-image="assets/calciumphos.jpeg">08 Calcium phosphate</p>
+        <p data-image="assets/baking soda.jpeg">09 and / or baking soda</p>
+        <p>-</p>
+        <p>Vegetable color:</p>
+        <p data-image="assets/turmeric.jpeg">10 Turmeric oleoresin</p>
+        <p data-image="assets/annatto.jpeg">11 Annatto extract</p>
+ </div>
+</div>
+<div class="card2" style="transform: rotate(22deg); left:33vw; top:20vh; z-index: 1000;">
+    <div class="source">
+        <p data-image="assets/wholegrain.jpeg">01 통밀가루</p>
+        <p data-image="assets/soybeanoil.webp">02 콩기름</p>
+        <p data-image="assets/sugar.jpeg">03 설탕</p>
+        <p data-image="assets/cornstarch.png">04 옥수수전분</p>
+        <p data-image="assets/malt.jpeg">05 맥아물엿 (조청물엿)</p>
+        <p data-image="assets/salt.jpeg">06 소금</p>
+        <p data-image="assets/goldensyrup.png">07 골든시럽</p>
+        <p>-</p>
+        <p>팽창제:</p>
+        <p data-image="assets/calciumphos.jpeg">08 인산화칼슘</p>
+        <p data-image="assets/baking soda.jpeg">09 그리고 / 또는 베이킹소다</p>
+        <p>-</p>
+        <p>천연 색소</p>
+        <p data-image="assets/turmeric.jpeg">10 심황색소</p>
+        <p data-image="assets/annatto.jpeg">11 안나토 추출물</p>
+    </div>
+</div>
+<div class="card4" style="z-index: -10; left: 52vw; top: 40vh; transform: rotate(40deg);">
+    <div class="photo">
+        <img id="card4-image" src="Dictionary/p15.png" alt="" style="width: 100%; display: none; justify-self: center;">
+    </div>
+</div>
+<script>
+   document.addEventListener('DOMContentLoaded', () => {
+    const card4Image = document.getElementById('card4-image');
+
+    // 페이지 로드 시 기본 이미지를 표시
+    card4Image.style.display = 'block';
+
+    document.querySelectorAll('.card p, .card2 p').forEach(p => {
+        p.addEventListener('click', () => {
+            const imageUrl = p.getAttribute('data-image');
+            if (imageUrl) {
+                card4Image.src = imageUrl;
+                card4Image.style.display = 'block';
+            } else {
+                card4Image.style.display = 'none';
+            }
+        });
+    });
+});
+
+</script>
+</body>
+</html>
