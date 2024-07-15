@@ -4,6 +4,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Director";
+  overflow-x: hidden;
 }
 
 .overlay {
@@ -96,6 +97,7 @@ body {
   line-height: 23px;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 div, ul, li, header {
