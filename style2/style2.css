@@ -520,4 +520,79 @@ p {
     color: white;
     margin: 0.625rem;
   }
+}
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px;
+    height: auto;
+    overflow-y: auto;
+  }
+  h1 {
+    font-size: 3rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  img {
+    width: 90%;
+    height: auto;
+  }
+  #small {
+    font-size: 2rem;
+    margin: 0.5rem;
+  }
+  #supersmall {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .middle {
+    flex-direction: column;
+  }
+  .left, .right {
+    width: 100%;
+    padding: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .left #big {
+    font-size: 1.25rem;
+  }
+  .left #last {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .left p {
+    margin: 0.5rem 0;
+  }
+  .right #big {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+  .right #last {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .right p {
+    margin: 0.5rem 0;
+  }
+  .bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .bottom h2 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+  }
+  main {
+    overflow-y: auto;
+  }
+  section {
+    scroll-snap-align: none;
+    height: auto;
+    padding: 1rem 0;
+  }
 }/*# sourceMappingURL=style2.css.map */

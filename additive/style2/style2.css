@@ -60,7 +60,9 @@
         url('../../assets/fonts/SelavyUnlocked-Thin.woff') format('woff');
     font-weight: 1; 
 }
-
+#size{
+  width: 33vw;
+}
 body {
   display: flex;
   flex-direction: column;
@@ -530,4 +532,441 @@ p {
     color: white;
     margin: 0.625rem;
   }
-}/*# sourceMappingURL=style2.css.map */
+}
+
+@media (max-width: 768px) {
+  body {
+    width: 100vw;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px;
+    height: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+    ::-webkit-scrollbar{
+      visibility: hidden;
+    }
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  img {
+    width: 60%;
+    height: auto;
+  }
+  #small {
+    justify-content: center;
+    margin: auto;
+    font-size: 1.8rem;
+    margin: 0.5rem;
+  }
+  .middle {
+    flex-direction: column;
+  }
+  .left, .right {
+    width: 100%;
+    padding: 1rem;
+    padding-left: 2.5rem;
+    padding-right: 1rem;
+  }
+  .left #big {
+    font-size: 1.25rem;
+  }
+  .left #last {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .left p {
+    margin: 0.5rem 0;
+  }
+  .right #big {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+  .right #last {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .right p {
+    margin: 0.5rem 0;
+  }
+  .bottom #small{
+    margin: auto;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  .top #supersmall{
+    margin: auto;
+    font-size: 1.8rem;
+    margin-top: 1rem;
+  }
+  .bottom #supersmall{
+    margin: auto;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  .bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .bottom h2 {
+    margin: auto;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  main {
+    overflow-y: auto;
+  }
+  section {
+    border-bottom: 1px solid grey;
+    scroll-snap-align: none;
+    height: auto;
+    padding: 0;
+    
+  }
+
+  #ad1 {
+    margin: auto;
+    width: 40%;
+    padding-bottom: 2.5rem;
+  }
+  
+  #ad2 {
+    margin: auto;
+    width: 18%;
+    padding-bottom: 2.5rem;
+  }
+  
+  #ad3 {
+    margin: auto;
+    width: 20%;
+    padding-bottom: 2.5rem;
+  }
+  
+  #ad4 {
+    margin: auto;
+    width: 20%;
+    padding-bottom: 2.5rem;
+  }
+  
+  #ad5 {
+    margin: auto;
+    width: 30%;
+    padding-bottom: 2.5rem;
+  }
+  
+  #ad6 {
+    margin: auto;
+    width: 35%;
+    padding-bottom: 2.5rem;
+  }
+  
+  #ad7 {
+    margin: auto;
+    width: 35%;
+    padding-bottom: 2.5rem;
+  }
+  
+  #ad8 {
+    margin: auto;
+    width: 50%;
+    padding-bottom: 2.5rem;
+  }
+  
+  #ad9 {
+    margin: auto;
+    width: 30%;
+    padding-bottom: 2.5rem;
+  }
+  
+  #ad10 {
+    margin: auto;
+    width: 30%;
+    padding-bottom: 2.5rem;
+  }
+  
+  #ad11 {
+    margin: auto;
+    width: 70%;
+    padding-bottom: 2.5rem;
+  }
+  
+  #ad12 {
+    margin: auto;
+    width: 20%;
+    padding-bottom: 2.5rem;
+  }
+  
+  #ad13 {
+    margin: auto;
+    width: 26%;
+    padding-bottom: 2.5rem;
+  }
+  
+  #ad14 {
+    margin: auto;
+    width: 30%;
+    padding-bottom: 2.5rem;
+  }
+  
+  #ad15 {
+    margin: auto;
+    width: 18%;
+    padding-bottom: 2.5rem;
+  }
+  
+  #ad16 {
+    margin: auto;
+    width: 30%;
+    padding-bottom: 3.125rem;
+  }
+  
+  #ad17 {
+    margin: auto;
+    width: 30%;
+    padding-bottom: 2.5rem;
+  }
+  
+  #ad18 {
+    margin: auto;
+    width: 50%;
+    padding-bottom: 2.5rem;
+  }
+  
+  #ad19 {
+    margin: auto;
+    width: 27%;
+    padding-bottom: 2.5rem;
+  }
+  
+  #ad20 {
+    margin: auto;
+    width: 26%;
+    padding-bottom: 2.5rem;
+  }
+  
+  #ad21 {
+    margin: auto;
+    width: 50%;
+    padding-bottom: 2.5rem;
+  }
+  
+  #ad22 {
+    margin: auto;
+    width: 42%;
+    padding-bottom: 2.5rem;
+  }
+  
+  #ad23 {
+    margin: auto;
+    width: 50%;
+    padding-bottom: 2.5rem;
+  }
+  
+  #ad24 {
+    margin: auto;
+    width: 40%;
+    padding-bottom: 2.5rem;
+  }
+  
+  #ad25 {
+    margin: auto;
+    width: 20%;
+    padding-bottom: 2.5rem;
+  }
+  
+  #ad27 {
+    margin: auto;
+    width: 50%;
+    padding-bottom: 2.5rem;
+  }
+  
+  #ad28 {
+    margin: auto;
+    width: 50%;
+    padding-bottom: 2.5rem;
+  }
+  
+  #ad29 {
+    margin: auto;
+    width: 26%;
+    padding-bottom: 2rem;
+  }
+  
+  #ad30 {
+    margin: auto;
+    width: 55%;
+    padding-bottom: 2.5rem;
+  }
+  
+  #ad31 {
+    margin: auto;
+    width: 50%;
+    padding-bottom: 3.125rem;
+  }
+  
+  #ad32 {
+    margin: auto;
+    width: 30%;
+    padding-bottom: 3.125rem;
+  }
+  
+  #ad33 {
+    margin: auto;
+    width: 23%;
+    padding-bottom: 3.125rem;
+  }
+  
+  #ad37 {
+    margin: auto;
+    width: 50%;
+    padding-bottom: 2.5rem;
+  }
+  
+  #ad39 {
+    margin: auto;
+    width: 20%;
+    padding-bottom: 2.5rem;
+  }
+  
+  #ad42 {
+    margin: auto;
+    width: 30%;
+    padding-bottom: 2.5rem;
+  }
+  
+  #ad43 {
+    margin: auto;
+    width: 42%;
+    padding-bottom: 2.5rem;
+  }
+  
+  #ad45 {
+    margin: auto;
+    width: 25%;
+    padding-bottom: 2.5rem;
+  }
+  
+  #ad48 {
+    margin: auto;
+    width: 69%;
+    padding-bottom: 2.5rem;
+  }
+  
+  #ad49 {
+    margin: auto;
+    width: 35%;
+    padding-bottom: 2rem;
+  }
+  
+  #ad51 {
+    margin: auto;
+    width: 40%;
+    padding-bottom: 2.5rem;
+  }
+  
+  #ad53 {
+    margin: auto;
+    width: 40%;
+    padding-bottom: 2.5rem;
+  }
+  
+  #ad54 {
+    margin: auto;
+    width: 60%;
+    padding-bottom: 2.5rem;
+  }
+  
+  #ad55 {
+    margin: auto;
+    width: 30%;
+    padding-bottom: 2.5rem;
+  }
+  
+  #ad56 {
+    margin: auto;
+    width: 15%;
+    padding-bottom: 2.5rem;
+  }
+  
+  #ad57 {
+    margin: auto;
+    width: 15%;
+    padding-bottom: 2.5rem;
+  }
+  
+  #ad60 {
+    margin: auto;
+    width: 40%;
+    padding-bottom: 2.5rem;
+  }
+  
+  #ad62 {
+    margin: auto;
+    width: 50%;
+    padding-bottom: 2.5rem;
+  }
+  
+  #ad64 {
+    margin: auto;
+    width: 30%;
+    padding-bottom: 2.5rem;
+  }
+  
+  #ad65 {
+    margin: auto;
+    width: 27%;
+    padding-bottom: 2.5rem;
+  }
+  
+  #ad66 {
+    margin: auto;
+    width: 35%;
+    padding-bottom: 2.5rem;
+  }
+  
+  #ad67 {
+    margin: auto;
+    width: 25%;
+    padding-bottom: 2.5rem;
+  }
+  
+  #ad69 {
+    margin: auto;
+    width: 15%;
+    padding-bottom: 2.5rem;
+  }
+  
+  #ad70 {
+    margin: auto;
+    width: 15%;
+    padding-bottom: 2.5rem;
+  }
+  
+  #ad71 {
+    margin: auto;
+    width: 20%;
+    padding-bottom: 2.5rem;
+  }
+  
+  #ad73 {
+    margin: auto;
+    width: 37%;
+    padding-bottom: 2.5rem;
+  }
+  
+  #ad75 {
+    margin: auto;
+    width: 20%;
+    padding-bottom: 2.5rem;
+  }
+}
+/*# sourceMappingURL=style2.css.map */
