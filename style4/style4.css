@@ -270,4 +270,114 @@ body {
     margin: 20px 20px 20px 70px;
     left: 3.3vw;
   }
+}
+/* 아이폰 SE, 8, 12 mini 등 작은 화면에 맞춘 스타일 */
+@media (max-width: 375px) {
+  body {
+    margin: 10px;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #result_title, #select_title {
+    font-size: 18px;
+    margin: 10px;
+  }
+  .select, .result {
+    width: 90vw;
+    position: static;
+    margin: 10px auto;
+  }
+  .button {
+    position: static;
+    margin: 20px auto;
+    text-align: center;
+  }
+  #button button {
+    width: 70px;
+    height: 70px;
+    font-size: 16px;
+  }
+  #food-container {
+    margin-top: 40px;
+    max-height: 150px;
+  }
+  #food-container img {
+    width: 150px;
+    height: 150px;
+  }
+  .additive {
+    width: 60px;
+    margin: 5px;
+  }
+  .additive img {
+    width: 60px;
+    height: 60px;
+  }
+  .custom-text {
+    font-size: 0.7rem;
+  }
+  #table {
+    width: 80vw;
+    margin: 20px 20px 50px 20px;
+    left: 3vw;
+    padding-bottom: 30px;
+  }
+  .result {
+    padding-top: 20px;
+  }
+}
+/* 아이폰 11, 12, 13 등 중간 크기 화면에 맞춘 스타일 */
+@media (min-width: 376px) and (max-width: 768px) {
+  body {
+    margin: 20px;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #result_title, #select_title {
+    font-size: 20px;
+    margin: 10px;
+  }
+  .select, .result {
+    width: 80vw;
+    position: static;
+    margin: 10px auto;
+  }
+  .button {
+    position: static;
+    margin: 20px auto;
+    text-align: center;
+  }
+  #button button {
+    width: 80px;
+    height: 80px;
+    font-size: 18px;
+  }
+  #food-container {
+    margin-top: 40px;
+    max-height: 250px;
+  }
+  #food-container img {
+    width: 250px;
+    height: 250px;
+  }
+  .additive {
+    width: 70px;
+    margin: 5px;
+  }
+  .additive img {
+    width: 70px;
+    height: 70px;
+  }
+  .custom-text {
+    font-size: 0.75rem;
+  }
+  #table {
+    width: 70vw;
+    padding-bottom: 50px;
+    margin: 20px 20px 50px 20px;
+    left: 9vw;
+  }
+  .result {
+    padding-top: 20px;
+  }
 }/*# sourceMappingURL=style4.css.map */
